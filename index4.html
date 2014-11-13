@@ -9,7 +9,7 @@
     <script src="ionic.bundle.js"></script>
   
   </head>
-  <body ng-app="starter">
+  <body ng-app>
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
@@ -17,6 +17,10 @@
       </ion-header-bar>
       <ion-content>
       <a href="http://www.google.com" class="button"> Google.com </a>
+      <div ng-controller = "MyController">
+        <input ng-model="x" type="text"/>
+        Model is : {{x}}
+      </div>
       </ion-content>
     </ion-pane>
   </body>
